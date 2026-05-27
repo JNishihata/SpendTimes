@@ -10,19 +10,32 @@ import SwiftUI
 import WidgetKit
 
 struct SpendTimesWidgetLiveActivity: Widget {
+    @State var timer = ""
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: SpendTimesAttributes.self) { context in
             // ロック画面・バナー表示
-            HStack {
-                
-                
-                Text(context.state.startDate, style: .timer)
-                    .monospacedDigit()
-                Text(context.attributes.appName)
-                    .foregroundStyle(.secondary)
+            VStack {
+                HStack{
+                    Text("Spend Times")
+                        .font(.caption)
+                    Spacer()
+                    Text("X")
+                }
+                HStack{
+                    Text(context.attributes.appName)
+                        .foregroundStyle(.secondary)
+                    Spacer()
+                    Text(context.state.startDate, style: .timer)
+                        .font(.largeTitle)
+                        .bold()
+                        
+                }
                 
             }
             .padding()
+            .onChange(of: context.state.startDate) {
+                timer = Self.dateFormatter.string(from: context.state.startDate)
+            }
         } dynamicIsland: { context in
             DynamicIsland {
                 // 展開時
@@ -52,12 +65,18 @@ struct SpendTimesWidgetLiveActivity: Widget {
                 Text(context.state.startDate, style: .timer)
                     .monospacedDigit()
                     .font(.caption2)
-                    .frame(width: 40)
+                    .frame(width: 29)
             } minimal: {
                 Image(systemName: "timer")
             }
         }
     }
+    
+    static let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm"
+        return formatter
+    }()
 }
 
 #Preview("Dynamic Island", as: .dynamicIsland(.expanded), using: SpendTimesAttributes(appName: "X")) {
