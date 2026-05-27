@@ -6,14 +6,76 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9A95AAB72FC71A52000983EE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A95AAB62FC71A52000983EE /* WidgetKit.framework */; };
+		9A95AAB92FC71A52000983EE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A95AAB82FC71A52000983EE /* SwiftUI.framework */; };
+		9A95AAC82FC71A53000983EE /* SpendTimesWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9A95AAB42FC71A52000983EE /* SpendTimesWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A95AAC62FC71A53000983EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A95AA9A2FC719FA000983EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A95AAB32FC71A52000983EE;
+			remoteInfo = SpendTimesWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9A95AACD2FC71A53000983EE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9A95AAC82FC71A53000983EE /* SpendTimesWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9A95AAA22FC719FA000983EE /* Spend times.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spend times.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A95AAB42FC71A52000983EE /* SpendTimesWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SpendTimesWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A95AAB62FC71A52000983EE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		9A95AAB82FC71A52000983EE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		9A95AACF2FC71A8D000983EE /* SpendTimesWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpendTimesWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9A95AAC92FC71A53000983EE /* Exceptions for "SpendTimesWidget" folder in "SpendTimesWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 9A95AAB32FC71A52000983EE /* SpendTimesWidgetExtension */;
+		};
+		9A95AAD32FC71AD0000983EE /* Exceptions for "Spend times" folder in "SpendTimesWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SpendTimesAttributes.swift,
+			);
+			target = 9A95AAB32FC71A52000983EE /* SpendTimesWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		9A95AAA42FC719FA000983EE /* Spend times */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9A95AAD32FC71AD0000983EE /* Exceptions for "Spend times" folder in "SpendTimesWidgetExtension" target */,
+			);
 			path = "Spend times";
+			sourceTree = "<group>";
+		};
+		9A95AABA2FC71A52000983EE /* SpendTimesWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9A95AAC92FC71A53000983EE /* Exceptions for "SpendTimesWidget" folder in "SpendTimesWidgetExtension" target */,
+			);
+			path = SpendTimesWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +88,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9A95AAB12FC71A52000983EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A95AAB92FC71A52000983EE /* SwiftUI.framework in Frameworks */,
+				9A95AAB72FC71A52000983EE /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		9A95AA992FC719FA000983EE = {
 			isa = PBXGroup;
 			children = (
+				9A95AACF2FC71A8D000983EE /* SpendTimesWidgetExtension.entitlements */,
 				9A95AAA42FC719FA000983EE /* Spend times */,
+				9A95AABA2FC71A52000983EE /* SpendTimesWidget */,
+				9A95AAB52FC71A52000983EE /* Frameworks */,
 				9A95AAA32FC719FA000983EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +115,18 @@
 			isa = PBXGroup;
 			children = (
 				9A95AAA22FC719FA000983EE /* Spend times.app */,
+				9A95AAB42FC71A52000983EE /* SpendTimesWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		9A95AAB52FC71A52000983EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A95AAB62FC71A52000983EE /* WidgetKit.framework */,
+				9A95AAB82FC71A52000983EE /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +139,12 @@
 				9A95AA9E2FC719FA000983EE /* Sources */,
 				9A95AA9F2FC719FA000983EE /* Frameworks */,
 				9A95AAA02FC719FA000983EE /* Resources */,
+				9A95AACD2FC71A53000983EE /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9A95AAC72FC71A53000983EE /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				9A95AAA42FC719FA000983EE /* Spend times */,
@@ -69,6 +155,28 @@
 			productName = "Spend times";
 			productReference = 9A95AAA22FC719FA000983EE /* Spend times.app */;
 			productType = "com.apple.product-type.application";
+		};
+		9A95AAB32FC71A52000983EE /* SpendTimesWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A95AACA2FC71A53000983EE /* Build configuration list for PBXNativeTarget "SpendTimesWidgetExtension" */;
+			buildPhases = (
+				9A95AAB02FC71A52000983EE /* Sources */,
+				9A95AAB12FC71A52000983EE /* Frameworks */,
+				9A95AAB22FC71A52000983EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9A95AABA2FC71A52000983EE /* SpendTimesWidget */,
+			);
+			name = SpendTimesWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = SpendTimesWidgetExtension;
+			productReference = 9A95AAB42FC71A52000983EE /* SpendTimesWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +189,9 @@
 				LastUpgradeCheck = 2650;
 				TargetAttributes = {
 					9A95AAA12FC719FA000983EE = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					9A95AAB32FC71A52000983EE = {
 						CreatedOnToolsVersion = 26.5;
 					};
 				};
@@ -100,12 +211,20 @@
 			projectRoot = "";
 			targets = (
 				9A95AAA12FC719FA000983EE /* Spend times */,
+				9A95AAB32FC71A52000983EE /* SpendTimesWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9A95AAA02FC719FA000983EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A95AAB22FC71A52000983EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +241,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9A95AAB02FC71A52000983EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A95AAC72FC71A53000983EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A95AAB32FC71A52000983EE /* SpendTimesWidgetExtension */;
+			targetProxy = 9A95AAC62FC71A53000983EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9A95AAAB2FC719FB000983EE /* Debug */ = {
@@ -178,6 +312,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -236,6 +372,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -251,11 +389,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Spend times/Spend times.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PS2GQSPJA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Spend-times-Info.plist";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -283,11 +425,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Spend times/Spend times.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PS2GQSPJA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Spend-times-Info.plist";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -303,6 +449,72 @@
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9A95AACB2FC71A53000983EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SpendTimesWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PS2GQSPJA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpendTimesWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpendTimesWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jnishihata.Spend-times.SpendTimesWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9A95AACC2FC71A53000983EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = SpendTimesWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PS2GQSPJA7;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SpendTimesWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SpendTimesWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
+				INFOPLIST_KEY_NSSupportsLiveActivitiesFrequentUpdates = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jnishihata.Spend-times.SpendTimesWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -327,6 +539,15 @@
 			buildConfigurations = (
 				9A95AAAE2FC719FB000983EE /* Debug */,
 				9A95AAAF2FC719FB000983EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A95AACA2FC71A53000983EE /* Build configuration list for PBXNativeTarget "SpendTimesWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A95AACB2FC71A53000983EE /* Debug */,
+				9A95AACC2FC71A53000983EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
