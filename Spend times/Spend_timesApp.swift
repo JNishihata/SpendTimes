@@ -12,19 +12,13 @@ import SwiftData
 struct Spend_timesApp: App {
     var body: some Scene {
         WindowGroup {
-            TabView {
-                NavigationStack{
-                    ContentView()
-                        .navigationTitle("Home")
-                }
-                    .tabItem { Label("Home", systemImage:"house")}
-                NavigationStack{
-                    HistoryView()
-                        .navigationTitle("History")
-                }
-                    .tabItem { Label("History", systemImage: "clock")}
-            }
+            ContentView()
         }
         .modelContainer(ModelContainerProvider.shared.container)
     }
+}
+
+
+#Preview {
+    ContentView()
 }

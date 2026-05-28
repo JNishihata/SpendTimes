@@ -13,27 +13,23 @@ struct HistoryView: View {
     @Query(sort: \TimerRecords.startDate, order: . reverse) var records : [TimerRecords]
     
     var body: some View {
-        VStack {
-            List(records) { record in
-                HStack{
-                    VStack{
-                        HStack{
-                            Text(record.appName)
-                                .bold()
-                            Spacer()
-                        }
-                        HStack{
-                            Text(Self.recordDateFormatter.string(from: record.startDate))
-                            Spacer()
-                        }
+        List(records) { record in
+            HStack{
+                VStack{
+                    HStack{
+                        Text(record.appName)
+                            .bold()
+                        Spacer()
                     }
-                    Spacer()
-                    Text("\(Int(record.duration / 60))分")
+                    HStack{
+                        Text(Self.recordDateFormatter.string(from: record.startDate))
+                        Spacer()
+                    }
                 }
+                Spacer()
+                Text("\(Int(record.duration / 60))分")
             }
-            
         }
-        .padding()
     }
     
     static let recordDateFormatter: DateFormatter = {
