@@ -53,18 +53,4 @@ SNS や動画アプリを見ていると、つい時間感覚を失いがちで�
 
 ## 権利 / License
 
-本リポジトリのソースコードは、以下の条件で利用できます。
-
-- 個人利用・学習目的でのビルドおよび改変は可能
-- 著作者の書面による許可なく、以下を禁止
-  - App Store / TestFlight 等での再配布
-  - 別アプリとしての公開・配布
-- 著作権は作者 JNishihata に帰属
-
-The source code in this repository is available under the following conditions.
-
-- You may build and modify it for personal or educational use.
-- The following actions are NOT permitted without written permission from the author:
-  - Redistribution via App Store, TestFlight, or similar platforms
-  - Publishing or distributing it as a separate application
-- Copyright belongs to JNishihata. All rights reserved.
+本リポジトリ内のすべてのコンテンツの権利は、[LICENSE](LICENSE) の通りです。
