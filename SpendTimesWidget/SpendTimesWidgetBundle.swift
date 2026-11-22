@@ -11,8 +11,6 @@ import SwiftUI
 @main
 struct SpendTimesWidgetBundle: WidgetBundle {
     var body: some Widget {
-        SpendTimesWidget()
-        SpendTimesWidgetControl()
         SpendTimesWidgetLiveActivity()
     }
 }
