@@ -1,0 +1,90 @@
+SpendTimes License
+
+Copyright (c) 2026 Jintaro Nishihata (JNishihata)
+All rights reserved.
+
+The English text below is the governing version. A Japanese translation
+follows for reference.
+
+--------------------------------------------------------------------------------
+English
+--------------------------------------------------------------------------------
+
+The source code in this repository (the "Software") is made publicly
+available for reference and learning. Subject to the conditions below, you
+are granted a limited, non-exclusive, non-transferable permission to use the
+Software.
+
+1. Permitted uses
+   You may, for personal or educational purposes only:
+   a. view and study the source code;
+   b. build and run the Software on your own devices;
+   c. modify the source code for your own use.
+
+2. Prohibited uses
+   Without prior written permission from the author, you may not:
+   a. distribute the Software or any modified version of it through the
+      App Store, TestFlight, or any similar distribution platform;
+   b. publish or distribute the Software or any modified version of it as a
+      separate application;
+   c. use the Software or any part of it for commercial purposes;
+   d. sublicense or sell the Software or any part of it.
+
+3. Notices
+   You must keep this license and the above copyright notice in all copies
+   or substantial portions of the Software.
+
+4. Name and icon
+   The name "SpendTimes" and the app icon may not be used to identify any
+   other application.
+
+5. Disclaimer
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+   AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM, OUT
+   OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OF THE SOFTWARE.
+
+6. Permissions
+   For any use not covered above, please contact the author through
+   https://github.com/JNishihata.
+
+--------------------------------------------------------------------------------
+日本語（参考訳）
+--------------------------------------------------------------------------------
+
+本リポジトリのソースコード（以下「本ソフトウェア」）は、参考および学習のために
+公開しています。以下の条件のもとで、本ソフトウェアを利用する限定的・非独占的・
+譲渡不能な許可を与えます。
+
+1. 許可される利用
+   個人利用または学習目的に限り、次のことができます。
+   a. ソースコードの閲覧および学習
+   b. 自分の端末での本ソフトウェアのビルドおよび実行
+   c. 自分で使うためのソースコードの改変
+
+2. 禁止される利用
+   著作者の事前の書面による許可なく、次のことはできません。
+   a. 本ソフトウェアまたはその改変版を、App Store、TestFlight その他これらに
+      類する配布プラットフォームで配布すること
+   b. 本ソフトウェアまたはその改変版を、別のアプリとして公開・配布すること
+   c. 本ソフトウェアの全部または一部を商用目的で利用すること
+   d. 本ソフトウェアの全部または一部を再許諾または販売すること
+
+3. 表示
+   本ソフトウェアの複製物または重要な部分には、本ライセンスおよび上記の著作権
+   表示を残してください。
+
+4. 名称およびアイコン
+   「SpendTimes」の名称およびアプリアイコンを、他のアプリを示すために使用する
+   ことはできません。
+
+5. 免責
+   本ソフトウェアは「現状のまま」提供され、商品性、特定目的への適合性および
+   権利非侵害を含め、明示・黙示を問わず一切の保証を行いません。著作者は、本
+   ソフトウェアまたはその利用に起因または関連して生じたいかなる請求、損害その他
+   の責任も負いません。
+
+6. 許可について
+   上記以外の利用を希望する場合は、https://github.com/JNishihata から著作者に
+   ご連絡ください。
