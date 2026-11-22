@@ -23,11 +23,18 @@ struct HistoryView: View {
                     }
                     HStack{
                         Text(Self.recordDateFormatter.string(from: record.startDate))
+                            .foregroundColor(.secondary)
+                            .font(.caption)
                         Spacer()
                     }
                 }
                 Spacer()
-                Text("\(Int(record.duration / 60))分")
+                if Int(record.duration / 60) > 0 {
+                    Text("\(Int(record.duration / 60))分\(Int(record.duration.truncatingRemainder(dividingBy: 60)))秒")
+                } else {
+                    Text("\(Int(record.duration.truncatingRemainder(dividingBy: 60)))秒")
+                }
+                
             }
         }
     }
